@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Homework
+        </title>
+    </head>
+    <body>
+        <button onclick="acsending()"> The numbers will be put in acsending order. </button>
+        <button onclick="descending()"> The numbers will be put in descending order. </button>
+        <p id="answer"> </p>
+        <script>
+            var points = [1, 15, 13, 22, 7, 11];
+            document.getElementById("answer").innerHTML = points;
+            function acsending() {
+                points.sort(function(a,b){return a-b});
+                document.getElementById("answer").innerHTML = points;
+            }
+            function descending() {
+                points.sort(function(a,b){return b-a});
+                document.getElementById("answer").innerHTML = points;
+            }
+        </script> 
+    </body>
+</html>
